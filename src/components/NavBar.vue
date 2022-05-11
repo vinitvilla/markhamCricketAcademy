@@ -33,57 +33,55 @@ export default {
 
 <style scoped lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
-
 .logo-img {
-  width: 60px;
-  height: 60px;
+	width: 60px;
+	height: 60px;
 }
 .nav {
-  position: sticky;
-  top: 0.4em;
-  width: 100%;
-  height: 6em;
-  color: silver;
-  background-color: black;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-transform: uppercase;
-  z-index: 2;
-}
-.nav > * {
-  height: 100%;
-  padding: 0.8rem;
-  display: flex;
-  align-content: center;
-  align-items: center;
+	position: sticky;
+	top: 0.4em;
+	width: 100%;
+	height: 6em;
+	color: silver;
+	background-color: black;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-transform: uppercase;
+	z-index: 2;
+	>* {
+		height: 100%;
+		padding: 0.8rem;
+		display: flex;
+		align-content: center;
+		align-items: center;
+	}
 }
 .router-link {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  color: red;
-  text-decoration: none;
-  margin: 0 0.3em;
-}
-.router-link:after {
-  content: "";
-  border-right: 3px solid silver;
-}
-.router-link:hover {
-  font-weight: bolder;
-  color: silver;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	color: red;
+	text-decoration: none;
+	margin: 0 0.3em;
+	&:after {
+		content: "";
+		border-right: 3px solid silver;
+	}
+	&:hover {
+		font-weight: bolder;
+		color: silver;
+	}
 }
 .logo_group {
-  width: 30%;
+	width: 30%;
 }
-
 .links_group {
-  width: 50%;
+	width: 50%;
+}
+.profile_group {
+	justify-content: flex-end;
+	width: 20%;
 }
 
-.profile_group {
-  justify-content: flex-end;
-  width: 20%;
-}
 </style>
