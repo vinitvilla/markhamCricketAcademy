@@ -1,0 +1,42 @@
+{
+    "1": {
+        "name": "Vinith",
+        "imgUrl": "vinith.jpg"
+    },
+    "2": {
+        "name": "Sai",
+        "imgUrl": ""
+    },
+    "3": {
+        "name": "Jay",
+        "imgUrl": "jay.jpg"
+    },
+    "4": {
+        "name": "Yuvi",
+        "imgUrl": ""
+    },
+    "5": {
+        "name": "Prasad",
+        "imgUrl": ""
+    },
+    "6": {
+        "name": "Suraj",
+        "imgUrl": ""
+    },
+    "7": {
+        "name": "Prasee",
+        "imgUrl": ""
+    },
+    "8": {
+        "name": "Maulik",
+        "imgUrl": ""
+    },
+    "9": {
+        "name": "Abishek",
+        "imgUrl": ""
+    },
+    "10": {
+        "name": "Ryan",
+        "imgUrl": ""
+    }
+}
