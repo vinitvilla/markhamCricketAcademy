@@ -5,18 +5,16 @@
 
 <script lang="ts">
 import NavBar from "@/components/NavBar.vue";
-import Carousel from "./components/Carousel.vue";
 
 export default {
   name: "App",
   components: {
     NavBar,
-    Carousel,
   },
 };
 </script>
 
-<style lang="scss" >
+<style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
 body {
   margin: 0;

@@ -4,10 +4,10 @@
     <Matches />
     <div class="container">
       <player-card
-        v-for="playerId in Object.keys(players)"
+        v-for="[playerId, playerObj] in Object.entries(players)"
         :key="playerId"
-        :name="players[playerId].name"
-        :imgUrl="players[playerId].imgUrl"
+        :name="playerObj.name"
+        :imgUrl="playerObj.imgUrl"
       />
     </div>
     <SocialMedia />
@@ -16,28 +16,29 @@
 </template>
 
 <script lang="ts">
-import Carousel from "@/components/Carousel.vue";
+import Carousel from "@/components/PlayerCarousel.vue";
 import PlayerCard from "@/components/PlayerCard.vue";
-import Footer from "@/components/Footer.vue"
+import Footer from "@/components/BaseFooter.vue";
 import SocialMedia from "../components/SocialMedia.vue";
 
 import players from "@/assets/data/players.json";
-import Matches from "../components/Matches.vue";
-export default {
-  name: "Home",
+import Matches from "../components/MatchPoint.vue";
+import { defineComponent } from "vue";
+export default defineComponent({
+  name: "HomeComponent",
   components: {
     Carousel,
     PlayerCard,
     Footer,
     SocialMedia,
-    Matches
-},
+    Matches,
+  },
   data() {
     return {
       players: players,
     };
   },
-};
+});
 </script>
 
 <style scoped lang="scss">

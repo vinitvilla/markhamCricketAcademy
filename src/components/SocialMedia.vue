@@ -27,7 +27,7 @@ import youtubeWhite from "./../assets/icons/youtube-white.svg";
 import youtubeColor from "./../assets/icons/youtube-color.svg";
 
 export default {
-  name: "Social Media",
+  name: "SocialMedia",
   components: {},
   data() {
     return {
@@ -67,8 +67,8 @@ export default {
       app.set_icon = app.icon_b;
     },
     gotoURL(url) {
-        window.open(url);
-    }
+      window.open(url);
+    },
   },
 };
 </script>

@@ -1,6 +1,8 @@
 <template>
   <div class="player" :style="backgroundImage">
-    <div class="player-hand-wrapper"><label class="player-hand">{{ batting_hand }}</label></div>
+    <div class="player-hand-wrapper">
+      <label class="player-hand">{{ batting_hand }}</label>
+    </div>
     <div class="player-name">{{ name }}</div>
   </div>
 </template>
@@ -15,7 +17,7 @@ export default {
     },
     batting_hand: {
       type: String,
-      default: "Right hand batsman"
+      default: "Right hand batsman",
     },
     imgUrl: {
       type: String,
@@ -23,9 +25,9 @@ export default {
   },
   computed: {
     backgroundImage() {
-      return `background-image: url(src/assets/images/${this.imgUrl})`
-    }
-  }
+      return `background-image: url(src/assets/images/${this.imgUrl})`;
+    },
+  },
 };
 </script>
 
@@ -67,10 +69,10 @@ export default {
   width: 100%;
 }
 
-.player:hover .player-hand-wrapper{
-    visibility: visible;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
-    transform: translateY(0);
+.player:hover .player-hand-wrapper {
+  visibility: visible;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  transform: translateY(0);
 }
 
 .player:hover .player-hand {

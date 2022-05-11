@@ -15,9 +15,18 @@
       <div class="dev">
         <label class="dev-text">Developed by: Vinith babu</label>
         <div>
-            <a href="https://www.linkedin.com/in/vinitvilla" class="fa fa-linkedin"></a>
-            <a href="https://www.facebook.com/vinitvilla" class="fa fa-facebook"></a>
-            <a href="https://www.instagram.com/vinitvilla" class="fa fa-instagram"></a>
+          <a
+            href="https://www.linkedin.com/in/vinitvilla"
+            class="fa fa-linkedin"
+          ></a>
+          <a
+            href="https://www.facebook.com/vinitvilla"
+            class="fa fa-facebook"
+          ></a>
+          <a
+            href="https://www.instagram.com/vinitvilla"
+            class="fa fa-instagram"
+          ></a>
         </div>
       </div>
     </div>
@@ -71,25 +80,27 @@ export default {};
       background: black;
       color: white;
 
-      &:hover{
-          color: black;
-          background-color: white;
-          font-weight: bolder;
-          cursor: pointer;
+      &:hover {
+        color: black;
+        background-color: white;
+        font-weight: bolder;
+        cursor: pointer;
       }
     }
   }
 }
 
 .copyright {
-    margin: 0.4em;
+  margin: 0.4em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-   & > * {
-       margin: 1em;
-   }
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  & > * {
+    margin: 1em;
+  }
 }
 
 .copyright-text {
@@ -98,25 +109,25 @@ export default {};
   align-items: center;
 }
 .dev {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .dev-text {
-    font-size: 1em;
+  font-size: 1em;
 }
 .fa {
-      padding: 0.6em;
-    width: 1em;
-    height: 1em;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-    animation-duration: 0.4s;
-    animation-iteration-count: 2;
-    transform-origin: bottom;
+  padding: 0.6em;
+  width: 1em;
+  height: 1em;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  animation-duration: 0.4s;
+  animation-iteration-count: 2;
+  transform-origin: bottom;
   &:hover {
     cursor: pointer;
     animation-name: bounce;

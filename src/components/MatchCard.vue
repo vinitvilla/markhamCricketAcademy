@@ -23,18 +23,18 @@
       </div>
     </div>
     <div class="result">
-        <Countdown :deadline="match.date" />
+      <Countdown :deadline="match.date" />
       <!-- <label v-html="formattedResult()" /> -->
     </div>
   </div>
 </template>
 
 <script>
-import Countdown from './VueCountdown.vue';
+import Countdown from "./VueCountdown.vue";
 export default {
   name: "MatchCard",
   components: {
-      Countdown
+    Countdown,
   },
   props: {
     match: {
@@ -42,10 +42,10 @@ export default {
       required: true,
     },
   },
-  data() { return {} },
-  methods: {
-    
+  data() {
+    return {};
   },
+  methods: {},
 };
 </script>
 
