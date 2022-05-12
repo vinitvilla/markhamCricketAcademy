@@ -15,7 +15,6 @@
       >
       <router-link class="router-link" to="/contact">Contact</router-link>
     </div>
-    <div class="profile_group">Profile</div>
   </div>
 </template>
 
@@ -34,16 +33,18 @@ export default {
 <style scoped lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
 .logo-img {
-	width: 60px;
-	height: 60px;
+	width: 50px;
+	height: 50px;
 }
 .nav {
 	position: sticky;
-	top: 0.4em;
 	width: 100%;
-	height: 6em;
+  top: 0;
+	height: 4em;
 	color: silver;
-	background-color: black;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #ee7752, #e73c7e);
+  background-size: 400% 400%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -61,27 +62,28 @@ export default {
 	height: 100%;
 	display: flex;
 	align-items: center;
-	color: red;
+	color: white;
 	text-decoration: none;
-	margin: 0 0.3em;
+	padding: 0 0.3em;
+  transition: all 0.5s;
 	&:after {
 		content: "";
 		border-right: 3px solid silver;
 	}
 	&:hover {
-		font-weight: bolder;
-		color: silver;
+    border-radius: 10%;
+    height: 75%;
+    background: black;
+    color:  white;
 	}
 }
 .logo_group {
-	width: 30%;
+	width: 10%;
+  cursor: pointer;
 }
 .links_group {
-	width: 50%;
-}
-.profile_group {
 	justify-content: flex-end;
-	width: 20%;
+	width: 90%;
 }
 
 </style>

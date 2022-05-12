@@ -1,42 +1,146 @@
-{
-    "1": {
-        "name": "Vinith",
-        "imgUrl": "vinith.jpg"
+[
+    {
+      "firstName": "Aathithan",
+      "lastName": "Suresh",
+      "role": "All-Rounder",
+      "battingStyle": "Left hand Batsman",
+      "bowlingStyle": "Left arm medium",
+      "imgUrl": ""
     },
-    "2": {
-        "name": "Sai",
-        "imgUrl": ""
+    {
+      "firstName": "Sai",
+      "lastName": "Kumar",
+      "role": "WK - Batsman",
+      "battingStyle": "Left hand Batsman",
+      "bowlingStyle": "Left arm orthodox",
+      "imgUrl": ""
     },
-    "3": {
-        "name": "Jay",
-        "imgUrl": "jay.jpg"
+    {
+      "firstName": "Maulik",
+      "lastName": "Sondhi",
+      "role": "All-Rounder",
+      "battingStyle": "Left hand Batsman",
+      "bowlingStyle": "Right arm fast",
+      "imgUrl": ""
     },
-    "4": {
-        "name": "Yuvi",
-        "imgUrl": ""
+    {
+      "firstName": "Adam",
+      "lastName": "Cumberland",
+      "role": "All-Rounder",
+      "battingStyle": "Right hand Batsman",
+      "bowlingStyle": "Right arm fast",
+      "imgUrl": ""
     },
-    "5": {
-        "name": "Prasad",
-        "imgUrl": ""
+    {
+      "firstName": "Suraj",
+      "lastName": "Gupta",
+      "role": "Bowler",
+      "battingStyle": "Right hand Batsman",
+      "bowlingStyle": "Left arm medium",
+      "imgUrl": ""
     },
-    "6": {
-        "name": "Suraj",
-        "imgUrl": ""
+    {
+      "firstName": "Prasad",
+      "lastName": "Vinod",
+      "role": "All-Rounder",
+      "battingStyle": "Right hand Batsman",
+      "bowlingStyle": "Right arm leg-break",
+      "imgUrl": ""
     },
-    "7": {
-        "name": "Prasee",
-        "imgUrl": ""
+    {
+      "firstName": "Jaykumar",
+      "lastName": "Ahir",
+      "role": "All-Rounder",
+      "battingStyle": "Right hand Batsman",
+      "bowlingStyle": "Right arm off-break",
+      "imgUrl": ""
     },
-    "8": {
-        "name": "Maulik",
-        "imgUrl": ""
+    {
+      "firstName": "Joshua Manooj",
+      "lastName": "Jeevanesan",
+      "role": "All-Rounder",
+      "battingStyle": "Right hand Batsman",
+      "bowlingStyle": "Left arm orthodox",
+      "imgUrl": ""
     },
-    "9": {
-        "name": "Abishek",
-        "imgUrl": ""
+    {
+      "firstName": "Gobinath",
+      "lastName": "Thangaiya",
+      "role": "All-Rounder",
+      "battingStyle": "Right hand Batsman",
+      "bowlingStyle": "Right arm fast",
+      "imgUrl": ""
     },
-    "10": {
-        "name": "Ryan",
-        "imgUrl": ""
+    {
+      "firstName": "Rhea",
+      "lastName": "Misra",
+      "role": "All-Rounder",
+      "battingStyle": "Right hand Batsman",
+      "bowlingStyle": "Right arm medium",
+      "imgUrl": ""
+    },
+    {
+      "firstName": "Krishh",
+      "lastName": "Misra",
+      "role": "All-Rounder",
+      "battingStyle": "Right hand Batsman",
+      "bowlingStyle": "Left arm wrist spin",
+      "imgUrl": ""
+    },
+    {
+      "firstName": "Deepamrit",
+      "lastName": "Verma",
+      "role": "WK - Batsman",
+      "battingStyle": "Right hand Batsman",
+      "bowlingStyle": "Right arm off-break",
+      "imgUrl": ""
+    },
+    {
+      "firstName": "Yuvaraj",
+      "lastName": "Parthiban",
+      "role": "Batsman",
+      "battingStyle": "Left hand Batsman",
+      "bowlingStyle": "Right arm medium",
+      "imgUrl": ""
+    },
+    {
+      "firstName": "Anushth",
+      "lastName": "Sharma",
+      "role": "All-Rounder",
+      "battingStyle": "Left hand Batsman",
+      "bowlingStyle": "Left arm fast",
+      "imgUrl": ""
+    },
+    {
+      "firstName": "Pirasannan",
+      "lastName": "Inpathurai",
+      "role": "All-Rounder",
+      "battingStyle": "Right hand Batsman",
+      "bowlingStyle": "Right arm medium",
+      "imgUrl": ""
+    },
+    {
+      "firstName": "Yasir",
+      "lastName": "Javed",
+      "role": "Bowler",
+      "battingStyle": "Right hand Batsman",
+      "bowlingStyle": "Left arm orthodox",
+      "imgUrl": ""
+    },
+    {
+      "firstName": "Abhishek",
+      "lastName": "Bhuria",
+      "role": "All-Rounder",
+      "battingStyle": "Right hand Batsman",
+      "bowlingStyle": "Right arm slow",
+      "imgUrl": ""
+    },
+    {
+      "firstName": "Vinith",
+      "lastName": "Babu",
+      "role": "WK - Batsman",
+      "battingStyle": "Right hand Batsman",
+      "bowlingStyle": "Right arm off-break",
+      "imgUrl": ""
     }
-}
+  ]

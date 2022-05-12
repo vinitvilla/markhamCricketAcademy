@@ -54,10 +54,12 @@ export default {
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
     rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
     rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  transition: transform cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .player:hover {
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 .player-hand-wrapper {
