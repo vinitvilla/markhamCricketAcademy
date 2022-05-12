@@ -1,9 +1,9 @@
 <template>
   <div class="player" :style="backgroundImage">
     <div class="player-hand-wrapper">
-      <label class="player-hand">{{ batting_hand }}</label>
+      <label class="player-hand">{{ role }}</label>
     </div>
-    <div class="player-name">{{ name }}</div>
+    <div class="player-name">{{ fullName }}</div>
   </div>
 </template>
 
@@ -11,11 +11,15 @@
 export default {
   name: "PlayerCard",
   props: {
-    name: {
+    firstName: {
       type: String,
       required: true,
     },
-    batting_hand: {
+    lastName: {
+      type: String,
+      required: true,
+    },
+    role: {
       type: String,
       default: "Right hand batsman",
     },
@@ -27,6 +31,9 @@ export default {
     backgroundImage() {
       return `background-image: url(src/assets/images/${this.imgUrl})`;
     },
+    fullName() {
+      return `${this.firstName} ${this.lastName}`
+    }
   },
 };
 </script>
@@ -46,7 +53,7 @@ export default {
   flex: none;
 
   /* Background */
-  background-color: #f96167;
+  background-color: url(@/assets/icons/player-bg.svg);
   // background-color: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(249, 97, 103, 0.8));
   background-size: cover;
   background-repeat: no-repeat;
@@ -63,7 +70,7 @@ export default {
 }
 
 .player-hand-wrapper {
-  height: 3em;
+  height: 4em;
   visibility: hidden;
   transition: 0.1s;
   transform: translateY(-100%);

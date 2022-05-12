@@ -6,8 +6,10 @@
       <player-card
         v-for="[playerId, playerObj] in Object.entries(players)"
         :key="playerId"
-        :name="playerObj.name"
+        :firstName="playerObj.firstName"
+        :lastName="playerObj.lastName"
         :imgUrl="playerObj.imgUrl"
+        :role="playerObj.role"
       />
     </div>
     <SocialMedia />

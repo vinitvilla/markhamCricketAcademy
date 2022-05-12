@@ -3,6 +3,7 @@
     <div class="join-us">
       Join us
       <div class="join-us-phone">
+        <input type="text" placeholder="Enter your name" />
         <input type="tel" placeholder="Enter your phone number" />
         <button>&#8594;</button>
       </div>
@@ -12,9 +13,11 @@
         Copyright&copy; 2022&nbsp;<em>MarkhamCricketAcademy.</em>&nbsp;All
         Rights Reserved.
       </p>
-      <div class="dev">
-        <label class="dev-text">Developed by: Vinith babu</label>
-        <div>
+      <div class="dev"
+          @mouseover="showSocialMedia = true"
+          @mouseleave="showSocialMedia = false">
+        <label v-if="!showSocialMedia" class="dev-text">Developer</label>
+        <div v-else>
           <a
             href="https://www.linkedin.com/in/vinitvilla"
             class="fa fa-linkedin"
@@ -34,7 +37,15 @@
 </template>
 
 <script>
-export default {};
+import { defineComponent } from "@vue/runtime-core";
+
+export default defineComponent({
+  data() {
+    return {
+        showSocialMedia: false,
+    }
+  }
+});
 </script>
 
 <style scoped lang="scss">
@@ -57,7 +68,7 @@ export default {};
   flex-direction: row;
 
   /* This bit draws the box around it */
-  border: 1px solid grey;
+  // border: 1px solid grey;
 
   /* I've used padding so you can see the edges of the elements. */
   padding: 2px;
@@ -65,8 +76,6 @@ export default {};
     input {
       /* Tell the input to use all the available space */
       flex-grow: 2;
-      /* And hide the input's outline, so the form looks like the outline */
-      border: none;
     }
 
     input:focus {
@@ -95,6 +104,7 @@ export default {};
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 2vmin;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
@@ -109,18 +119,19 @@ export default {};
   align-items: center;
 }
 .dev {
+  height: 1em;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 .dev-text {
-  font-size: 1em;
+  font-size: 2vmin;
 }
 .fa {
   padding: 0.6em;
   width: 1em;
   height: 1em;
-  font-size: 16px;
+  font-size: 2vmin;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;

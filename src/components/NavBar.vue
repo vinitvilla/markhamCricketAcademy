@@ -10,9 +10,7 @@
       <router-link class="router-link" to="/about">About US</router-link>
       <router-link class="router-link" to="/news">Latest News</router-link>
       <router-link class="router-link" to="/team">Team</router-link>
-      <router-link class="router-link" to="/join-club"
-        >Join the Club</router-link
-      >
+      <router-link class="router-link" to="/join-club">Join the Club</router-link>
       <router-link class="router-link" to="/contact">Contact</router-link>
     </div>
   </div>
@@ -56,6 +54,7 @@ export default {
 		display: flex;
 		align-content: center;
 		align-items: center;
+		font-size: 2vmin;
 	}
 }
 .router-link {
