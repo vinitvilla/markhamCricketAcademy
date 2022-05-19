@@ -53,8 +53,7 @@ export default {
   flex: none;
 
   /* Background */
-  background-color: url(@/assets/icons/player-bg.svg);
-  // background-color: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(249, 97, 103, 0.8));
+  background-color: rgba(249, 97, 103, 1);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

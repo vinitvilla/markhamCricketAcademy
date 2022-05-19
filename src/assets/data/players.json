@@ -5,7 +5,7 @@
       "role": "All-Rounder",
       "battingStyle": "Left hand Batsman",
       "bowlingStyle": "Left arm medium",
-      "imgUrl": ""
+      "imgUrl": "Aathithan.jpg"
     },
     {
       "firstName": "Sai",
@@ -13,7 +13,7 @@
       "role": "WK - Batsman",
       "battingStyle": "Left hand Batsman",
       "bowlingStyle": "Left arm orthodox",
-      "imgUrl": ""
+      "imgUrl": "sai.jpg"
     },
     {
       "firstName": "Maulik",
@@ -37,7 +37,7 @@
       "role": "Bowler",
       "battingStyle": "Right hand Batsman",
       "bowlingStyle": "Left arm medium",
-      "imgUrl": ""
+      "imgUrl": "suraj.jpg"
     },
     {
       "firstName": "Prasad",
@@ -45,7 +45,7 @@
       "role": "All-Rounder",
       "battingStyle": "Right hand Batsman",
       "bowlingStyle": "Right arm leg-break",
-      "imgUrl": ""
+      "imgUrl": "prasad.jpg"
     },
     {
       "firstName": "Jaykumar",
@@ -77,7 +77,7 @@
       "role": "All-Rounder",
       "battingStyle": "Right hand Batsman",
       "bowlingStyle": "Right arm medium",
-      "imgUrl": ""
+      "imgUrl": "rhea.jpg"
     },
     {
       "firstName": "Krishh",
@@ -85,7 +85,7 @@
       "role": "All-Rounder",
       "battingStyle": "Right hand Batsman",
       "bowlingStyle": "Left arm wrist spin",
-      "imgUrl": ""
+      "imgUrl": "krishh.jpg"
     },
     {
       "firstName": "Deepamrit",
@@ -93,7 +93,7 @@
       "role": "WK - Batsman",
       "battingStyle": "Right hand Batsman",
       "bowlingStyle": "Right arm off-break",
-      "imgUrl": ""
+      "imgUrl": "deepamrit.jpg"
     },
     {
       "firstName": "Yuvaraj",
@@ -101,7 +101,7 @@
       "role": "Batsman",
       "battingStyle": "Left hand Batsman",
       "bowlingStyle": "Right arm medium",
-      "imgUrl": ""
+      "imgUrl": "yuvaraj.jpg"
     },
     {
       "firstName": "Anushth",
@@ -109,7 +109,7 @@
       "role": "All-Rounder",
       "battingStyle": "Left hand Batsman",
       "bowlingStyle": "Left arm fast",
-      "imgUrl": ""
+      "imgUrl": "anushth.jpg"
     },
     {
       "firstName": "Pirasannan",
@@ -117,7 +117,7 @@
       "role": "All-Rounder",
       "battingStyle": "Right hand Batsman",
       "bowlingStyle": "Right arm medium",
-      "imgUrl": ""
+      "imgUrl": "pirasannan.jpg"
     },
     {
       "firstName": "Yasir",
