@@ -29,7 +29,7 @@ export default {
   },
   computed: {
     backgroundImage() {
-      return `background-image: url(src/assets/images/${this.imgUrl})`;
+      return `background-image: url(/src/assets/images/${this.imgUrl})`;
     },
     fullName() {
       return `${this.firstName} ${this.lastName}`
