@@ -1,14 +1,17 @@
 <template>
-  <div class="player" :style="backgroundImage">
-    <div class="player-hand-wrapper">
+  <div class="player">
+    <img class="player-img" :src="`${image}`" />
+    <span class="player-hand-wrapper">
       <label class="player-hand">{{ role }}</label>
-    </div>
+    </span>
     <div class="player-name">{{ fullName }}</div>
-  </div>
+  </div> 
 </template>
 
 <script>
-export default {
+import { defineComponent } from "@vue/runtime-core";
+
+export default defineComponent({
   name: "PlayerCard",
   props: {
     firstName: {
@@ -28,22 +31,26 @@ export default {
     },
   },
   computed: {
-    backgroundImage() {
-      return `background-image: url(/src/assets/images/${this.imgUrl})`;
-    },
     fullName() {
-      return `${this.firstName} ${this.lastName}`
-    }
+      return `${this.firstName} ${this.lastName}`;
+    },
+    image() {
+      if(this.imgUrl)
+        return `/src/assets/images/${this.imgUrl}`;
+      return `/src/assets/images/default.jpg`;
+    },
   },
-};
+});
 </script>
 
 <style scoped lang="scss">
 .player {
+  position: relative;
   width: 20em;
   height: 24em;
   color: white;
   margin: 10px 0;
+  cursor: pointer;
 
   /* flex box */
   display: flex;
@@ -63,12 +70,16 @@ export default {
   transition: transform cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.player:hover {
-  cursor: pointer;
-  transform: scale(1.05);
+.player-img {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
 }
 
 .player-hand-wrapper {
+  z-index: 2;
   height: 4em;
   visibility: hidden;
   transition: 0.1s;
@@ -88,7 +99,10 @@ export default {
 }
 
 .player-name {
+  z-index: 3;
   font-size: 1.4rem;
   padding: 0.5em;
+  font-weight: bolder;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #ee7752, #e73c7e);
 }
 </style>
