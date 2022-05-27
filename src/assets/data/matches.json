@@ -24,6 +24,18 @@
         "series": "First Division"
     },
     {
+        "matchId": 5,
+        "matchType": "30 overs",
+        "date": "05-28-2022",
+        "time": "03:00 PM",
+        "team1": "MCA",
+        "team1Img": "https://cricclubs.com/documentsRep/teamLogos/751e1d28-460e-4403-99cc-415b98e2819a.jpeg",
+        "team2": "Bloomington",
+        "team2Img": "https://cricclubs.com/documentsRep/teamLogos/637c5d28-e961-4344-afca-f3641747b918.jpg",
+        "venue": "Ross Lord West",
+        "series": "First Division"
+    },
+    {
         "matchId": 3,
         "matchType": "30 overs",
         "date": "06-04-2022",
@@ -45,18 +57,6 @@
         "team2": "MCA",
         "team2Img": "https://cricclubs.com/documentsRep/teamLogos/751e1d28-460e-4403-99cc-415b98e2819a.jpeg",
         "venue": "SB East",
-        "series": "First Division"
-    },
-    {
-        "matchId": 5,
-        "matchType": "30 overs",
-        "date": "06-19-2022",
-        "time": "03:00 PM",
-        "team1": "MCA",
-        "team1Img": "https://cricclubs.com/documentsRep/teamLogos/751e1d28-460e-4403-99cc-415b98e2819a.jpeg",
-        "team2": "Bloomington",
-        "team2Img": "https://cricclubs.com/documentsRep/teamLogos/637c5d28-e961-4344-afca-f3641747b918.jpg",
-        "venue": "Ross Lord West",
         "series": "First Division"
     },
     {
