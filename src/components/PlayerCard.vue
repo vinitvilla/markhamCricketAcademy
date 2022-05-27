@@ -1,6 +1,6 @@
 <template>
   <div class="player">
-    <img class="player-img" :src="`src/assets/images/${this.imgUrl}`" />
+    <img class="player-img" :src="getImageUrl" />
     <span class="player-hand-wrapper">
       <label class="player-hand">{{ role }}</label>
     </span>
@@ -33,6 +33,9 @@ export default defineComponent({
   computed: {
     fullName() {
       return `${this.firstName} ${this.lastName}`;
+    },
+    getImageUrl() {
+      return new URL(`../assets/images/${this.imgUrl}`, import.meta.url).href
     }
   },
 });
