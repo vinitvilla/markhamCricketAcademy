@@ -1,6 +1,6 @@
 <template>
   <div class="player">
-    <img class="player-img" :src="`${image}`" />
+    <img class="player-img" :src="`'${image}'`" />
     <span class="player-hand-wrapper">
       <label class="player-hand">{{ role }}</label>
     </span>
@@ -37,7 +37,7 @@ export default defineComponent({
     image() {
       if(this.imgUrl)
         return `/src/assets/images/${this.imgUrl}`;
-      return `/src/assets/images/default.jpg`;
+      return (`/src/assets/images/default.jpg`);
     },
   },
 });
