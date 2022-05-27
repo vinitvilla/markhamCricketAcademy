@@ -1,6 +1,6 @@
 <template>
   <div class="player">
-    <img class="player-img" :src="`'${image}'`" />
+    <img class="player-img" :src="`${image}`" />
     <span class="player-hand-wrapper">
       <label class="player-hand">{{ role }}</label>
     </span>
