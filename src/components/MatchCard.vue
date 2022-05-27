@@ -20,6 +20,7 @@
       <div class="date_time">
         <p>{{ match.date }}</p>
         <p>{{ match.time }}</p>
+        <h3>{{ match.venue}}</h3>
       </div>
     </div>
     <div class="result">

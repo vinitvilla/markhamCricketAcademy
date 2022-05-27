@@ -108,6 +108,18 @@
         "series": "First Division"
     },
     {
+        "matchId": 13,
+        "matchType": "30 overs",
+        "date": "07-24-2022",
+        "time": "09:00 AM",
+        "team1": "Ahmadiyya CC",
+        "team1Img": "https://cricclubs.com/documentsRep/teamLogos/e4edf263-bbd2-4282-88db-e65ca4248c44.jpg",
+        "team2": "MCA",
+        "team2Img": "https://cricclubs.com/documentsRep/teamLogos/751e1d28-460e-4403-99cc-415b98e2819a.jpeg",
+        "venue": "L @ Caledonia South",
+        "series": "First Division"
+    },
+    {
         "matchId": 10,
         "matchType": "30 overs",
         "date": "07-30-2022",
@@ -141,18 +153,6 @@
         "team2": "Mississauga Ramblers 1st",
         "team2Img": "https://cricclubs.com/documentsRep/teamLogos/ramblers.jpg",
         "venue": "SB West ",
-        "series": "First Division"
-    },
-    {
-        "matchId": 13,
-        "matchType": "30 overs",
-        "date": "08-28-2022",
-        "time": "09:00 AM",
-        "team1": "Ahmadiyya CC",
-        "team1Img": "https://cricclubs.com/documentsRep/teamLogos/e4edf263-bbd2-4282-88db-e65ca4248c44.jpg",
-        "team2": "MCA",
-        "team2Img": "https://cricclubs.com/documentsRep/teamLogos/751e1d28-460e-4403-99cc-415b98e2819a.jpeg",
-        "venue": "SB North ",
         "series": "First Division"
     },
     {
