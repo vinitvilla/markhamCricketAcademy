@@ -35,7 +35,8 @@ export default defineComponent({
       return `${this.firstName} ${this.lastName}`;
     },
     getImageUrl() {
-      return new URL(`../assets/images/${this.imgUrl}`, import.meta.url).href
+      const img = this.imgUrl ? this.imgUrl : 'default.jpg';
+      return new URL(`../assets/images/${img}`, import.meta.url).href
     }
   },
 });
