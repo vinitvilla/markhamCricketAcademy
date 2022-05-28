@@ -3,20 +3,22 @@ import type { Team } from "./teams";
 export class Matches {
     id: number;
     type: string;
-    date: string;
+    date: Date;
     isHome: boolean;
     opponentTeam: Team;
     venue: string;
     series: string;
+    result: string;
 
-    constructor(id: number, type: string, date: string, time: string, isHome: boolean, opponentTeam: Team, venue: string, series: string) {
+    constructor(id: number, type: string, date: string, time: string, isHome: boolean, opponentTeam: Team, venue: string, series: string, result: string) {
         this.id = id;
         this.type = type;
         this.isHome = isHome;
-        this.date = `${date} ${time}`
+        this.date = new Date(`${date} ${time} EDT`)
         this.opponentTeam = opponentTeam;
         this.venue = venue;
         this.series = series;
+        this.result = result;
     }
 
     getId: () => number = () => this.id;
@@ -25,8 +27,8 @@ export class Matches {
     getType: () => string = () => this.type;
     setType: (type: string) => void = (type: string) => this.type = type;
     
-    getDate: () => string = () => this.date;
-    setDate: (date: string) => void = (date: string) => this.date = date;
+    getDate: () => Date = () => this.date;
+    setDate: (date: Date) => void = (date: Date) => this.date = date;
 
     getOpponentTeam: () => Team = () => this.opponentTeam;
     setOpponentTeam: (opponent: Team) => void = (opponent: Team) => this.opponentTeam = opponent;
@@ -36,4 +38,7 @@ export class Matches {
 
     getSeries: () => string = () => this.series;
     setSeries: (series: string) => void = (series: string) => this.series = series;
+
+    getResult: () => string = () => this.result;
+    setResult: (result: string) => void = (result: string) => this.result = result;
 }

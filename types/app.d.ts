@@ -4,6 +4,7 @@ interface Team {
 }
 
 interface Match {
+    result: string;
     id: number;
     type: string;
     date: string;
@@ -13,4 +14,5 @@ interface Match {
     teamImg: string;
     venue: string;
     series: string;
+    result: string;
 }

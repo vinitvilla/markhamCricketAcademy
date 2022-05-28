@@ -18,14 +18,13 @@
 
       <div class="vs">vs</div>
       <div class="date_time">
-        <p>{{ moment(match.getDate()).format("MM-DD-YYYY") }}</p>
-        <p>{{ moment(match.getDate()).format('LT') }}</p>
+        <p>{{ getFormattedDate() }}</p>
+        <p>{{ getFormattedTime() }}</p>
         <h3>{{ match.getVenue()}}</h3>
       </div>
     </div>
     <div class="result">
-      <Countdown :deadline="match.getDate()" />
-      <!-- <label v-html="formattedResult()" /> -->
+      {{ formattedResult() }}
     </div>
   </div>
 </template>
@@ -33,14 +32,10 @@
 <script>
 import { TEAM_MCA } from '@/constant';
 import { Team } from '@/model/teams';
-import Countdown from "./VueCountdown.vue";
-
-import moment from 'moment';
 
 export default {
   name: "MatchCard",
   components: {
-    Countdown,
   },
   props: {
     match: {
@@ -54,11 +49,21 @@ export default {
     };
   },
   computed: {
-    moment(){
-      return moment;
+    
+  },
+  methods: {
+    formattedResult() {
+      return this.match.getResult();
+    },
+    getFormattedDate() {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      return this.match.getDate().toLocaleDateString('en-US', options);
+    },
+    getFormattedTime() {
+      const options = { hour: 'numeric', minute: 'numeric' };
+      return this.match.getDate().toLocaleTimeString('en-US', options);
     },
   },
-  methods: {},
 };
 </script>
 
@@ -121,9 +126,7 @@ export default {
   align-items: center;
   justify-content: center;
   height: 100%;
-  height: -moz-available;
-  height: -webkit-fill-available;
-  height: fill-available;
+  height: 10em;
   background-color: black;
   color: white;
   border-radius: 0 0 0.8em 0.8em;

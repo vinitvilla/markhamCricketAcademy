@@ -14,7 +14,8 @@ const getMatchListFromJson = (json: Match[]) : Matches[] => {
             match.isHome,
             new Team(match.team, match.teamImg),
             match.venue,
-            match.series
+            match.series,
+            match.result
         ));
     });
     return matchesList;
