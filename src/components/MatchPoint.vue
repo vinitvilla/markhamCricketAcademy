@@ -1,18 +1,26 @@
 <template>
   <div class="matches-container">
-    <MatchCard v-for="match in matches" :key="match.matchId" :match="match" />
+    <div class="match-card-wrapper">
+      <MatchCard v-for="match in matches" :key="match.id" :match="match" />
+    </div>
   </div>
 </template>
 
 <script>
-import matches from "@/assets/data/matches.json";
+import getMatchesList from '@/service/matches';
 import MatchCard from "./MatchCard.vue";
+
 export default {
   name: "MatchPoint",
   data() {
     return {
-      matches: matches,
+      
     };
+  },
+  computed: {
+    matches() {
+      return getMatchesList().sort((a, b) => a.getDate() - b.getDate());
+    },
   },
   components: { MatchCard },
 };
@@ -23,7 +31,16 @@ export default {
   display: flex;
   height: 40vh;
   width: 100%;
+  flex-direction: column;
+}
+.match-card-wrapper {
+  display: flex;
   overflow-x: auto;
   flex-direction: row;
+}
+.filters {
+  width: 100%;
+  height: 8vh;
+  margin: 1em 1em 0 1em;
 }
 </style>

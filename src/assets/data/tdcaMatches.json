@@ -1,0 +1,168 @@
+[
+    {
+       "date": "05-15-2022",
+       "id": 1,
+       "isHome": false,
+       "series": "TDCA First Division",
+       "team": "Shinol Ms CC",
+       "teamImg": "https://cricclubs.com/documentsRep/teamLogos/39768b9d-fccc-4401-a116-7add6736e535.jpg",
+       "time": "3:00 PM",
+       "type": "30 overs",
+       "venue": "Caledonia South"
+    },
+    {
+       "date": "05-21-2022",
+       "id": 2,
+       "isHome": false,
+       "series": "TDCA First Division",
+       "team": "Ajax CC",
+       "teamImg": "https://cricclubs.com/documentsRep/teamLogos/89eb794a-8d62-4ba1-812f-0ad8d7baa111.jpg",
+       "time": "3:00 PM",
+       "type": "30 overs",
+       "venue": "Ajax"
+    },
+    {
+       "date": "05-28-2022",
+       "id": 5,
+       "isHome": true,
+       "series": "TDCA First Division",
+       "team": "Bloomington",
+       "teamImg": "https://cricclubs.com/documentsRep/teamLogos/637c5d28-e961-4344-afca-f3641747b918.jpg",
+       "time": "03:00 PM",
+       "type": "30 overs",
+       "venue": "Ross Lord West"
+    },
+    {
+       "date": "06-04-2022",
+       "id": 3,
+       "isHome": true,
+       "series": "TDCA First Division",
+       "team": "Royal Sluggers",
+       "teamImg": "https://cricclubs.com/documentsRep/teamLogos/8a671a5e-d75c-49b0-a241-b0abbe43932f.jpg",
+       "time": "9:00 AM",
+       "type": "30 overs",
+       "venue": "SB West"
+    },
+    {
+       "date": "06-05-2022",
+       "id": 4,
+       "isHome": false,
+       "series": "TDCA First Division",
+       "team": "Overseas CC First",
+       "teamImg": "https://cricclubs.com/documentsRep/teamLogos/37df3137-fff8-45ec-94bc-5a5a7e249eb3.jpg",
+       "time": "09:00 AM",
+       "type": "30 overs",
+       "venue": "SB East"
+    },
+    {
+       "date": "07-02-2022",
+       "id": 6,
+       "isHome": false,
+       "series": "TDCA First Division",
+       "team": "Thorncliffe Green CC First",
+       "teamImg": "https://cricclubs.com/documentsRep/teamLogos/a41d15e8-1d84-4dfb-aea8-a4db35cf8316.jpg",
+       "time": "03:00 PM",
+       "type": "30 overs",
+       "venue": "EG West"
+    },
+    {
+       "date": "07-03-2022",
+       "id": 7,
+       "isHome": false,
+       "series": "TDCA First Division",
+       "team": "Bangla CC",
+       "teamImg": "https://cricclubs.com/documentsRep/teamLogos/39d6439e-ce04-44cf-b316-4437b299c3de.jpg",
+       "time": "09:00 AM",
+       "type": "30 overs",
+       "venue": "SB East"
+    },
+    {
+       "date": "07-10-2022",
+       "id": 8,
+       "isHome": false,
+       "series": "TDCA First Division",
+       "team": "Toronto Academy",
+       "teamImg": "https://cricclubs.com/documentsRep/teamLogos/b20d1b7a-c685-4365-9a72-823f719cf187.jpg",
+       "time": "03:00 PM",
+       "type": "30 overs",
+       "venue": "Ross Lord East"
+    },
+    {
+       "date": "07-17-2022",
+       "id": 9,
+       "isHome": true,
+       "series": "TDCA First Division",
+       "team": "Centurions CC",
+       "teamImg": "https://cricclubs.com/documentsRep/teamLogos/19bfa4fa-30f0-439e-b282-022c54808e2e.jpg",
+       "time": "03:00 PM",
+       "type": "30 overs",
+       "venue": "SB East"
+    },
+    {
+       "date": "07-24-2022",
+       "id": 13,
+       "isHome": false,
+       "series": "TDCA First Division",
+       "team": "Ahmadiyya CC",
+       "teamImg": "https://cricclubs.com/documentsRep/teamLogos/e4edf263-bbd2-4282-88db-e65ca4248c44.jpg",
+       "time": "09:00 AM",
+       "type": "30 overs",
+       "venue": "L @ Caledonia South"
+    },
+    {
+       "date": "07-30-2022",
+       "id": 10,
+       "isHome": true,
+       "series": "TDCA First Division",
+       "team": "Tranzac CC",
+       "teamImg": "https://cricclubs.com/documentsRep/teamLogos/62850dde-b292-4dbe-bb42-d22c0e262cd8.jpg",
+       "time": "09:00 AM",
+       "type": "30 overs",
+       "venue": "SB West"
+    },
+    {
+       "date": "08-14-2022",
+       "id": 11,
+       "isHome": true,
+       "series": "TDCA First Division",
+       "team": "ImperialCC",
+       "teamImg": "https://cricclubs.com/utilsv2/img/icons/no-image-team1.jpg",
+       "time": "09:00 AM",
+       "type": "30 overs",
+       "venue": "SB East"
+    },
+    {
+       "date": "08-28-2022",
+       "id": 12,
+       "isHome": true,
+       "series": "TDCA First Division",
+       "team": "Mississauga Ramblers 1st",
+       "teamImg": "https://cricclubs.com/documentsRep/teamLogos/ramblers.jpg",
+       "time": "09:00 AM",
+       "type": "30 overs",
+       "venue": "SB West"
+    },
+    {
+       "date": "09-05-2022",
+       "id": 14,
+       "isHome": false,
+       "series": "TDCA First Division",
+       "team": "Ghaznavi CCC",
+       "teamImg": "https://cricclubs.com/documentsRep/teamLogos/0ffef7c4-2ff2-4a17-bb1d-14f74a449273.jpg",
+       "time": "09:00 AM",
+       "type": "30 overs",
+       "venue": "SB West"
+    },
+    {
+       "date": "09-10-2022",
+       "id": 15,
+       "isHome": true,
+       "series": "TDCA First Division",
+       "team": "Toronto Rebels",
+       "teamImg": "https://cricclubs.com/documentsRep/teamLogos/24e50d0f-3f2e-41d7-adeb-afc2ddbf9d23.jpg",
+       "time": "03:00 PM",
+       "type": "30 overs",
+       "venue": "SB East"
+    }
+ ]
+ 
