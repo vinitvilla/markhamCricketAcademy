@@ -23,7 +23,7 @@ export default defineComponent({
 .carousel {
   margin-top: 0.1em;
   width: 100%;
-  height: 60vh;
+  height: 100vh;
 }
 
 .image {

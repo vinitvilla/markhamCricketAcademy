@@ -29,7 +29,7 @@ export default {
 <style>
 .matches-container {
   display: flex;
-  height: 40vh;
+  height: 32vh;
   width: 100%;
   flex-direction: column;
 }
