@@ -18,13 +18,13 @@
 
       <div class="vs">vs</div>
       <div class="date_time">
-        <p>{{ getDate().format("MM-DD-YYYY") }}</p>
-        <p>{{ getDate().format('LT') }}</p>
+        <p>{{ moment(match.getDate()).format("MM-DD-YYYY") }}</p>
+        <p>{{ moment(match.getDate()).format('LT') }}</p>
         <h3>{{ match.getVenue()}}</h3>
       </div>
     </div>
     <div class="result">
-      <Countdown :deadline="getDate().format('MMM-DD-YYYY hh:mm:ss a')" />
+      <Countdown :deadline="match.getDate()" />
       <!-- <label v-html="formattedResult()" /> -->
     </div>
   </div>
@@ -54,13 +54,11 @@ export default {
     };
   },
   computed: {
-    
+    moment(){
+      return moment;
+    },
   },
-  methods: {
-    getDate() {
-      return moment(this.match.getDate());
-    }
-  },
+  methods: {},
 };
 </script>
 

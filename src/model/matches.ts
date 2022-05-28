@@ -3,7 +3,7 @@ import type { Team } from "./teams";
 export class Matches {
     id: number;
     type: string;
-    date: Date;
+    date: string;
     isHome: boolean;
     opponentTeam: Team;
     venue: string;
@@ -13,7 +13,7 @@ export class Matches {
         this.id = id;
         this.type = type;
         this.isHome = isHome;
-        this.date = new Date(`${date} ${time} EDT`)
+        this.date = `${date} ${time}`
         this.opponentTeam = opponentTeam;
         this.venue = venue;
         this.series = series;
@@ -25,8 +25,8 @@ export class Matches {
     getType: () => string = () => this.type;
     setType: (type: string) => void = (type: string) => this.type = type;
     
-    getDate: () => Date = () => this.date;
-    setDate: (date: Date) => void = (date: Date) => this.date = date;
+    getDate: () => string = () => this.date;
+    setDate: (date: string) => void = (date: string) => this.date = date;
 
     getOpponentTeam: () => Team = () => this.opponentTeam;
     setOpponentTeam: (opponent: Team) => void = (opponent: Team) => this.opponentTeam = opponent;
