@@ -14,7 +14,7 @@ export class Matches {
         this.id = id;
         this.type = type;
         this.isHome = isHome;
-        this.date = new Date(`${date} ${time} EDT`)
+        this.date = new Date(`${date} ${time}`) 
         this.opponentTeam = opponentTeam;
         this.venue = venue;
         this.series = series;
