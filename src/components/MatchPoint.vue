@@ -1,5 +1,6 @@
 <template>
   <div class="matches-container">
+    <MatchFilter :matches="matches" @filter="getFilters"/>
     <div class="match-card-wrapper">
       <MatchCard v-for="match in matches" :key="match.id" :match="match" />
     </div>
@@ -9,12 +10,13 @@
 <script>
 import getMatchesList from '@/service/matches';
 import MatchCard from "./MatchCard.vue";
+import MatchFilter from "./MatchFilter.vue";
 
 export default {
   name: "MatchPoint",
   data() {
     return {
-      
+      selectedFilter: {}
     };
   },
   computed: {
@@ -22,14 +24,22 @@ export default {
       return getMatchesList().sort((a, b) => a.getDate() - b.getDate());
     },
   },
-  components: { MatchCard },
+  methods: {
+    getFilters(selected_filters){
+      this.selectedFilter = selected_filters;
+      console.log(selected_filters);
+    },
+  },
+  components: { 
+    MatchCard, 
+    MatchFilter 
+  },
 };
 </script>
 
 <style>
 .matches-container {
   display: flex;
-  height: 40vh;
   width: 100%;
   flex-direction: column;
 }

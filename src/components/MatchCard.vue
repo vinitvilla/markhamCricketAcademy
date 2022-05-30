@@ -126,7 +126,7 @@ export default {
   align-items: center;
   justify-content: center;
   height: 100%;
-  height: 10em;
+  padding: 1em;
   background-color: black;
   color: white;
   border-radius: 0 0 0.8em 0.8em;
