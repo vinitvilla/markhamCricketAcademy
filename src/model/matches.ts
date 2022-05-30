@@ -1,3 +1,4 @@
+import moment from "moment";
 import type { Team } from "./teams";
 
 export class Matches {
@@ -14,7 +15,7 @@ export class Matches {
         this.id = id;
         this.type = type;
         this.isHome = isHome;
-        this.date = new Date(`${date} ${time}`) 
+        this.date = moment(`${date} ${time}`, "MM-DD-YYYY HH:mm a").toDate();
         this.opponentTeam = opponentTeam;
         this.venue = venue;
         this.series = series;
