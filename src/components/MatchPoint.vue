@@ -27,7 +27,6 @@ export default {
   methods: {
     getFilters(selected_filters){
       this.selectedFilter = selected_filters;
-      console.log(selected_filters);
     },
   },
   components: { 
