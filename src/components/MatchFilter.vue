@@ -107,6 +107,7 @@ export default defineComponent({
 .filter-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .filter-group {
   display: flex;

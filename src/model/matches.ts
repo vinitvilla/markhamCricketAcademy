@@ -27,6 +27,9 @@ export class Matches {
     
     getType: () => string = () => this.type;
     setType: (type: string) => void = (type: string) => this.type = type;
+
+    isHomeMatch: () => boolean = () => this.isHome;
+    setHomeMatch: (isHome: boolean) => void = (isHome: boolean) => this.isHome = isHome;
     
     getDate: () => Date = () => this.date;
     setDate: (date: Date) => void = (date: Date) => this.date = date;
