@@ -35,7 +35,6 @@ export default {
   methods: {
     getFilters(selected_filters) {
       this.selectedFilter = selected_filters;
-      console.log(this.selectedFilter);
     },
     applyFilter() {
       const filteredList = getMatchesList().filter((match) => {
@@ -45,16 +44,18 @@ export default {
           this.checkFilterForSeries(match)
         );
       });
-      console.log(filteredList);
       return filteredList;
     },
     checkFilterForSchedule(match) {
       const { schedule } = this.selectedFilter;
       if (schedule.length > 0) {
-        if (schedule.includes("upcoming")) {
-          return match.getDate() > new Date();
-        } else if (schedule.includes("past")) {
-          return match.getDate() < new Date();
+        if (match.getDate() > Date.now() && schedule.includes("upcoming")) {
+          return true;
+        } else if (match.getDate() < Date.now() && schedule.includes("past")) {
+          return true;
+        }
+        else {
+          return false;
         }
       }
       return true;
@@ -62,10 +63,13 @@ export default {
     checkFilterForHome(match) {
       const { home } = this.selectedFilter;
       if (home.length > 0) {
-        if (home.includes("home")) {
-          return match.isHomeMatch();
-        } else if (home.includes("away")) {
-          return !match.isHomeMatch();
+        if (match.isHomeMatch() && home.includes("home")) {
+          return true;
+        } else if (!match.isHomeMatch() && home.includes("away")) {
+          return true;
+        }
+        else {
+          return false;
         }
       }
       return true;

@@ -23,13 +23,14 @@
         <h3>{{ match.getVenue()}}</h3>
       </div>
     </div>
-    <div class="result">
+    <div v-if="isPastMatch(match.getDate())" class="result">
       {{ formattedResult() }}
     </div>
   </div>
 </template>
 
 <script>
+import homeBg from "@/assets/icons/home.svg";
 import { TEAM_MCA } from '@/constant';
 import { Team } from '@/model/teams';
 
@@ -46,6 +47,7 @@ export default {
   data() {
     return {
       teamMCA: new Team(TEAM_MCA.name, TEAM_MCA.imgUrl),
+      homebg: homeBg,
     };
   },
   computed: {
@@ -63,6 +65,9 @@ export default {
       const options = { hour: 'numeric', minute: 'numeric' };
       return this.match.getDate().toLocaleTimeString('en-US', options);
     },
+    isPastMatch(date) {
+      return date < new Date();
+    },
   },
 };
 </script>
@@ -73,12 +78,10 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #fff;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   border-radius: 0.8em;
   margin: 0.8em;
-  background: white;
   h1 {
     font-size: 1.2em;
   }
