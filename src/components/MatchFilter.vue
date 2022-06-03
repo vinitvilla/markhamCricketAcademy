@@ -38,7 +38,7 @@ export default defineComponent({
       selectedFilter: {
         schedule: ["upcoming"],
         home: [],
-        series: []
+        series: [],
       },
       filters: {
         schedule: [
@@ -71,7 +71,9 @@ export default defineComponent({
     },
     selectFilter(filter_group, filter) {
       if (this.selectedFilter[filter_group].includes(filter.name)) {
-        this.selectedFilter[filter_group] = this.selectedFilter[filter_group].filter(item => item !== filter.name);
+        this.selectedFilter[filter_group] = this.selectedFilter[
+          filter_group
+        ].filter((item) => item !== filter.name);
       } else {
         this.selectedFilter[filter_group].push(filter.name);
       }

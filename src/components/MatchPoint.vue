@@ -53,8 +53,7 @@ export default {
           return true;
         } else if (match.getDate() < Date.now() && schedule.includes("past")) {
           return true;
-        }
-        else {
+        } else {
           return false;
         }
       }
@@ -67,8 +66,7 @@ export default {
           return true;
         } else if (!match.isHomeMatch() && home.includes("away")) {
           return true;
-        }
-        else {
+        } else {
           return false;
         }
       }
@@ -77,7 +75,7 @@ export default {
     checkFilterForSeries(match) {
       const { series } = this.selectedFilter;
       if (series.length > 0) {
-        return (series.includes(match.getSeries()));
+        return series.includes(match.getSeries());
       }
       return true;
     },

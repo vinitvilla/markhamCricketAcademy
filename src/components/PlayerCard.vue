@@ -5,7 +5,7 @@
       <label class="player-hand">{{ role }}</label>
     </span>
     <div class="player-name">{{ fullName }}</div>
-  </div> 
+  </div>
 </template>
 
 <script>
@@ -35,9 +35,9 @@ export default defineComponent({
       return `${this.firstName} ${this.lastName}`;
     },
     getImageUrl() {
-      const img = this.imgUrl ? this.imgUrl : 'default.jpg';
-      return new URL(`../assets/images/${img}`, import.meta.url).href
-    }
+      const img = this.imgUrl ? this.imgUrl : "default.jpg";
+      return new URL(`../assets/images/${img}`, import.meta.url).href;
+    },
   },
 });
 </script>

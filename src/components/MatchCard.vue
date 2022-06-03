@@ -7,12 +7,38 @@
     <div class="match_info">
       <div class="team_name">
         <div class="team team1">
-          <img :src="match.isHome ? teamMCA.getImgUrl(): match.getOpponentTeam().getImgUrl()" :alt="match.team1" />
-          <h4>{{ match.isHome ? teamMCA.getName() : match.getOpponentTeam().getName() }}</h4>
+          <img
+            :src="
+              match.isHome
+                ? teamMCA.getImgUrl()
+                : match.getOpponentTeam().getImgUrl()
+            "
+            :alt="match.team1"
+          />
+          <h4>
+            {{
+              match.isHome
+                ? teamMCA.getName()
+                : match.getOpponentTeam().getName()
+            }}
+          </h4>
         </div>
         <div class="team team2">
-          <img :src="!match.isHome ? teamMCA.getImgUrl(): match.getOpponentTeam().getImgUrl()" :alt="match.team2" />
-          <h4>{{ !match.isHome ? teamMCA.getName() : match.getOpponentTeam().getName()  }}</h4>
+          <img
+            :src="
+              !match.isHome
+                ? teamMCA.getImgUrl()
+                : match.getOpponentTeam().getImgUrl()
+            "
+            :alt="match.team2"
+          />
+          <h4>
+            {{
+              !match.isHome
+                ? teamMCA.getName()
+                : match.getOpponentTeam().getName()
+            }}
+          </h4>
         </div>
       </div>
 
@@ -20,7 +46,7 @@
       <div class="date_time">
         <p>{{ getFormattedDate() }}</p>
         <p>{{ getFormattedTime() }}</p>
-        <h3>{{ match.getVenue()}}</h3>
+        <h3>{{ match.getVenue() }}</h3>
       </div>
     </div>
     <div v-if="isPastMatch(match.getDate())" class="result">
@@ -30,13 +56,12 @@
 </template>
 
 <script>
-import { TEAM_MCA } from '@/constant';
-import { Team } from '@/model/teams';
+import { TEAM_MCA } from "@/constant";
+import { Team } from "@/model/teams";
 
 export default {
   name: "MatchCard",
-  components: {
-  },
+  components: {},
   props: {
     match: {
       type: Object,
@@ -48,20 +73,18 @@ export default {
       teamMCA: new Team(TEAM_MCA.name, TEAM_MCA.imgUrl),
     };
   },
-  computed: {
-    
-  },
+  computed: {},
   methods: {
     formattedResult() {
       return this.match.getResult();
     },
     getFormattedDate() {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' };
-      return this.match.getDate().toLocaleDateString('en-US', options);
+      const options = { year: "numeric", month: "long", day: "numeric" };
+      return this.match.getDate().toLocaleDateString("en-US", options);
     },
     getFormattedTime() {
-      const options = { hour: 'numeric', minute: 'numeric' };
-      return this.match.getDate().toLocaleTimeString('en-US', options);
+      const options = { hour: "numeric", minute: "numeric" };
+      return this.match.getDate().toLocaleTimeString("en-US", options);
     },
     isPastMatch(date) {
       return date < new Date();
