@@ -30,7 +30,6 @@
 </template>
 
 <script>
-import homeBg from "@/assets/icons/home.svg";
 import { TEAM_MCA } from '@/constant';
 import { Team } from '@/model/teams';
 
@@ -47,7 +46,6 @@ export default {
   data() {
     return {
       teamMCA: new Team(TEAM_MCA.name, TEAM_MCA.imgUrl),
-      homebg: homeBg,
     };
   },
   computed: {

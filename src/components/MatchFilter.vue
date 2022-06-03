@@ -114,6 +114,7 @@ export default defineComponent({
   flex-direction: row;
   justify-content: center;
   margin-right: 2em;
+  flex-wrap: wrap;
 }
 .filter {
   display: flex;
