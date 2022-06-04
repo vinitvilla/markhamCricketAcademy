@@ -99,8 +99,7 @@ export default {
   flex-direction: row;
 }
 .filters {
-  width: 100%;
-  height: 8vh;
-  margin: 1em 1em 0 1em;
+    height: 8vh;
+    margin: 0.5em 0 0.5em 0;
 }
 </style>

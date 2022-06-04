@@ -115,7 +115,6 @@ export default defineComponent({
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-right: 2em;
   flex-wrap: wrap;
 }
 .filter {
@@ -125,7 +124,6 @@ export default defineComponent({
   padding: 0 1em;
   margin: 0 0.5em;
   font-size: 2vmin;
-  width: 100%;
   height: 100%;
   border-radius: 5%;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,

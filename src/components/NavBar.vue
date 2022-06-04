@@ -3,7 +3,7 @@
     <div class="logo_group" @click="routeToHome">
       <img
         class="logo-img"
-        src="https://cricclubs.com/documentsRep/teamLogos/751e1d28-460e-4403-99cc-415b98e2819a.jpeg"
+        :src="logo"
       />
     </div>
     <div class="links_group">
@@ -19,13 +19,18 @@
 </template>
 
 <script>
-// import router from "@/router";
+import logo  from "@/assets/logo.jpg";
 export default {
   name: "NavBar",
   methods: {
     routeToHome() {
       this.$router.push("/");
     },
+  },
+  data() {
+    return {
+      logo: logo,
+    };
   },
 };
 </script>
@@ -35,6 +40,7 @@ export default {
 .logo-img {
   width: 50px;
   height: 50px;
+  border-radius: 50%;
 }
 .nav {
   position: sticky;
@@ -42,7 +48,7 @@ export default {
   top: 0;
   height: 4em;
   color: silver;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #ee7752, #e73c7e);
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #ee7752, #e73c7e);
   background-size: 400% 400%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
