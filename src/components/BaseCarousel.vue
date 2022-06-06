@@ -9,7 +9,7 @@ import image from "@/assets/images/group1.jpg";
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "PlayerCarousel",
+  name: "BaseCarousel",
   data() {
     return {
       url: "",

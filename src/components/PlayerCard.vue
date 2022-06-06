@@ -103,5 +103,9 @@ export default defineComponent({
   padding: 0.5em;
   font-weight: bolder;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #ee7752, #e73c7e);
+  text-align: center;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  width: fill-available;
 }
 </style>

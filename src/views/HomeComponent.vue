@@ -18,7 +18,7 @@
 </template>
 
 <script lang="ts">
-import Carousel from "@/components/PlayerCarousel.vue";
+import Carousel from "@/components/BaseCarousel.vue";
 import PlayerCard from "@/components/PlayerCard.vue";
 import Footer from "@/components/BaseFooter.vue";
 import SocialMedia from "../components/SocialMedia.vue";

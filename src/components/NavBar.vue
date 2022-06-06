@@ -57,7 +57,7 @@ export default {
   flex-direction: row;
   align-items: center;
   text-transform: uppercase;
-  z-index: 3;
+  z-index: 4;
   > * {
     height: 100%;
     padding: 0.8rem;
