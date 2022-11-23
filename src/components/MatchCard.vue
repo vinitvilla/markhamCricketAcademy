@@ -151,8 +151,9 @@ export default {
   justify-content: center;
   height: 100%;
   padding: 1em;
-  background-color: black;
-  color: white;
+  background-color: #438945;
+  font-weight: bolder;
+  color: black;
   border-radius: 0 0 0.8em 0.8em;
 }
 </style>

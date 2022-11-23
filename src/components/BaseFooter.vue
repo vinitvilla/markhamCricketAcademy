@@ -23,11 +23,12 @@
     </div>
     <div class="join-us">
       Join us
-      <div class="join-us-phone">
-        <input type="text" placeholder="Enter your name" />
+      <!-- <div class="join-us-phone"> -->
+        <!-- <input type="text" placeholder="Enter your name" />
         <input type="tel" placeholder="Enter your phone number" />
-        <button>&#8594;</button>
-      </div>
+        <button>&#8594;</button> -->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf-9Spyr_WLA_pmrcPpeN4MSTkqQC6P5LyWKf3Ms8vc527kaA/viewform?embedded=true" width="640" height="804" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <!-- </div> -->
     </div>
     <div class="copyright">
       <p class="copyright-text">

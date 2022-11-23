@@ -36,7 +36,7 @@ export default defineComponent({
   data() {
     return {
       selectedFilter: {
-        schedule: ["upcoming"],
+        schedule: ["past"],
         home: [],
         series: [],
       },

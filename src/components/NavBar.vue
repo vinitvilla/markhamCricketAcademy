@@ -1,21 +1,78 @@
 <template>
-  <div class="nav">
-    <div class="logo_group" @click="routeToHome">
-      <img
-        class="logo-img"
-        :src="logo"
-      />
-    </div>
-    <div class="links_group">
-      <router-link class="router-link" to="/about">About US</router-link>
-      <router-link class="router-link" to="/news">Latest News</router-link>
-      <router-link class="router-link" to="/team">Team</router-link>
-      <router-link class="router-link" to="/join-club"
-        >Join the Club</router-link
-      >
-      <router-link class="router-link" to="/contact">Contact</router-link>
-    </div>
-  </div>
+  <header>
+    <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+            <div class="flex items-center hover:cursor-pointer" @click="routeTo('')">
+                <img :src="logo" class="rounded-full mr-3 h-6 sm:h-9" alt="MCA Logo" />
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">MCA</span>
+            </div>
+            <div class="flex items-center lg:order-2">
+                <div @click="routeToLogin" class="text-gray-800 dark:text-white hover:cursor-pointer hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log in</div>
+                <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>
+            <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <li>
+                        <div 
+                          ref="homeDiv"
+                          vinith="villa"
+                          @click="routeTo('')" 
+                          class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white hover:cursor-pointer" 
+                          aria-current="page">
+                          Home
+                        </div>
+                    </li>
+                    <li>
+                        <div 
+                          @click="routeTo('about')" 
+                          class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 hover:cursor-pointer">
+                          About us
+                        </div>
+                    </li>
+                    <li>
+                        <div 
+                          @click="routeTo('marketplace')" 
+                          class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 hover:cursor-pointer">
+                          Marketplace
+                        </div>
+                    </li>
+                    <li>
+                        <div 
+                          @click="routeTo('latestNews')" 
+                          class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 hover:cursor-pointer">
+                          Latest News
+                        </div>
+                    </li>
+                    <li>
+                        <div 
+                          @click="routeTo('team')" 
+                          class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 hover:cursor-pointer">
+                          Team
+                        </div>
+                    </li>
+                    <li>
+                        <div 
+                          @click="routeTo('joinTheClub')" 
+                          class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 hover:cursor-pointer">
+                          Join the Club
+                        </div>
+                    </li>
+                    <li>
+                        <div 
+                          @click="routeTo('contact')" 
+                          class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 hover:cursor-pointer">
+                          Contact
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 </template>
 
 <script>
@@ -23,9 +80,9 @@ import logo  from "@/assets/logo.jpg";
 export default {
   name: "NavBar",
   methods: {
-    routeToHome() {
-      this.$router.push("/");
-    },
+    routeTo(url) {
+      this.$router.push(`/${url}`);
+    }
   },
   data() {
     return {
@@ -34,64 +91,3 @@ export default {
   },
 };
 </script>
-
-<style scoped lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
-.logo-img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-.nav {
-  position: sticky;
-  width: 100%;
-  top: 0;
-  height: 4em;
-  color: silver;
-  background: linear-gradient(45deg, #ee7752, #e73c7e, #ee7752, #e73c7e);
-  background-size: 400% 400%;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-transform: uppercase;
-  z-index: 4;
-  > * {
-    height: 100%;
-    padding: 0.8rem;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    font-size: 2vmin;
-  }
-}
-.router-link {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  color: white;
-  text-decoration: none;
-  padding: 0 0.3em;
-  transition: all 0.5s;
-  &:after {
-    content: "";
-    border-right: 3px solid silver;
-  }
-  &:hover {
-    border-radius: 10%;
-    height: 75%;
-    background: black;
-    color: white;
-  }
-}
-.logo_group {
-  width: 10%;
-  cursor: pointer;
-}
-.links_group {
-  justify-content: flex-end;
-  width: 90%;
-}
-</style>
